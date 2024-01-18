@@ -18,10 +18,7 @@ const Home = () => {
   const [getIndex, setGetIndex] = useState("");
   const [contract, setContract] = useState(null);
   const publicClient = usePublicClient();
-  const walletClient = createWalletClient({
-    chain: modeTestnet,
-    transport: custom(window.ethereum),
-  });
+ 
 
   const handleTransactionSubmit = async () => {
     try {
